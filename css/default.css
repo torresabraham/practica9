@@ -28,6 +28,7 @@ nav:hover .desplegable {
   display: block;
 } 
 .boton1 {
+  background-color: white;
   cursor: pointer;
   border: 1px transparent;
 }
@@ -74,3 +75,6 @@ footer {
   height: 90px;
 }
 
+#mailto{
+  color: white;
+}
