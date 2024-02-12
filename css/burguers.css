@@ -1,20 +1,38 @@
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #e7d4be;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+    padding: 15px;
+    border-radius: 20px;
+}
 #popular{
     display: flex;
-    background-color: #F4D35E;
 }
 
 h2{
-    background-color: #DCAB6B;
     padding-top: 30px;
+    font-size: xx-large;
+    font-weight: bolder;
 }
 article{
     background-color: #FAF0CA;
-    margin: 25px;border-radius: 15%;
-    
+    margin: 25px;
+    border-radius: 15%; 
+}
+
+article img{
+    border-radius: 20px;
 }
 p{
     padding-left: 20px;
 }
-img{
-    width: 8rem;
+.burguers{
+    width: 24rem;
+    transition: width 0.5s ease;
+}
+.burguers:hover{
+    width: 28rem;
 }
