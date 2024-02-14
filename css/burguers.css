@@ -1,6 +1,7 @@
 
 main {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: #292929;
     text-align: center;
@@ -44,7 +45,15 @@ article {
     border-radius: 15%; 
     position: relative;
 }
-
+@media only screen and (max-width: 1200px) {
+    #popular {
+      display: block;
+      width: 27rem;
+      justify-content: center;
+    }
+    
+  }
+  
 article img {
     border-radius: 20px;
     width: 24rem;
