@@ -9,7 +9,6 @@ main {
     border-radius: 20px;
     height: 1500px;
 }
-
 #popular {
     display: flex;
     z-index: 1;
@@ -24,8 +23,8 @@ main {
     display: flex;
     z-index: 1;
     justify-content: center;
+    margin-bottom: 50px;
 }
-
 h2 {
     padding-top: 30px;
     font-size: 40px;
@@ -34,7 +33,6 @@ h2 {
     text-decoration: underline;
     margin-top: 70px;
 }
-
 #titlepopular{
     margin: 0;
     padding: 0;
@@ -45,21 +43,37 @@ article {
     border-radius: 15%; 
     position: relative;
 }
-@media only screen and (max-width: 1200px) {
-    #popular {
-      display: block;
-      width: 27rem;
-      justify-content: center;
+@media only screen and (max-width: 1300px) {
+    main{
+        height: 100%;
+        display: flex;
+        width: 100%;
     }
-    
-  }
-  
+    article{
+        margin-top: 140px;
+    }
+    #popular {
+      display: flex;
+      width: 27rem;
+      flex-direction: column;
+      
+    }
+    #clasic {
+        display: flex;
+        width: 27rem;
+        flex-direction: column;
+      }
+    #news {
+        display: flex;
+        width: 27rem;
+        flex-direction: column;
+    }
+} 
 article img {
     border-radius: 20px;
     width: 24rem;
     transition: width 0.5s ease;
 }
-
 article:hover img {
     width: 28rem;
 }
@@ -67,7 +81,6 @@ article p {
    font-weight: bold;
    font-size: 20px;
 }
-
 .article-dropdown-content {
     margin-top: 15px;
     display: none;
@@ -81,7 +94,6 @@ article p {
     top: 100%;
     align-items: center;
 }
-
 article:hover .article-dropdown-content {
     display: block;
 }
